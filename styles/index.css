@@ -17,7 +17,7 @@
   --primary-highlight: var(--gold-soundz);
   --secondary-highlight: var(--neon-watermelon);
   --primary-gray: #dfdfdf;
-  --danger: white;
+  --danger: blue;
 }
 
 html {
@@ -36,6 +36,7 @@ nav {
   border-bottom: 3px solid var(--primary-highlight);
   padding: 50px;
   text-align: center;
+  min-width: 60rem;
 }
 
 nav h1 {
@@ -51,13 +52,22 @@ nav h1 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin: 0 auto;
   padding: 30px;
+  min-width: 60rem;
+  max-height: auto;
+  background: #CE5937;
+background: -moz-linear-gradient(45deg, #CE5937 0%, #1C6EA4 28%, #C59237 100%);
+background: -webkit-linear-gradient(45deg, #CE5937 0%, #1C6EA4 28%, #C59237 100%);
+background: linear-gradient(45deg, #CE5937 0%, #1C6EA4 28%, #C59237 100%);
 }
+
 
 /* Form */
 aside.form {
   padding: 0 30px;
+  min-width: 10rem;
 }
 
 aside.form h2 {
@@ -68,6 +78,7 @@ aside.form form label {
   display: block;
   margin: 20px 0;
   width: 100%;
+  background: #CE5937;
 }
 
 aside.form form input,
@@ -76,12 +87,12 @@ aside.form form select {
   border-radius: 0;
   border-style: solid;
   box-sizing: border-box;
-  color: ghostwhite;
+  color: grey;
   display: block;
   margin: 5px 0;
   padding: 5px;
   width: 100%;
-  color: aliceblue;
+  color: rgb(22, 56, 86);
 }
 
 aside.form form button,
@@ -142,6 +153,9 @@ aside.form form button[type="submit"]:hover {
   cursor: pointer;
 }
 
+h2,h3 {
+   color
+}
 .guest-list h2,
 .form h2 {
   border-bottom: 3px solid var(--primary-highlight);
@@ -155,8 +169,7 @@ aside.form form button[type="submit"]:hover {
 .guest-list h3 {
   color: var(--primary-background);
   font-size: 28px;
-  font-style: italic;
-  font-weight: 100;
+  font-style: bold
   margin-bottom: 20px;
 }
 
@@ -170,7 +183,7 @@ aside.form form button[type="submit"]:hover {
   border: 0;
   border-radius: 5px;
   border-style: solid;
-  color: #fbfbff;
+  color: #ffd166;
   font-weight: bold;
   margin-top: 10px;
   padding: 10px 20px;
